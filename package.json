@@ -1,0 +1,26 @@
+{
+  "name": "finance-cn",
+  "main": "./lib/finance-cn",
+  "version": "0.0.0",
+  "description": "Simple plugin for checking your stock in Atom.io editor (Chinese market).",
+  "keywords": [
+    "chinese market",
+    "finance",
+    "financial",
+    "statusbar",
+    "stock"
+  ],
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "repository": "https://github.com/7kfpun/atom-finance-cn",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {}
+}

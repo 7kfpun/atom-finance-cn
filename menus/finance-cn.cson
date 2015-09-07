@@ -1,0 +1,30 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle Finance CN'
+      'command': 'finance-cn:toggle'
+    },
+    {
+      'label': 'Refresh Finance CN'
+      'command': 'finance-cn:refresh'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Finance CN'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'finance-cn:toggle'
+        },
+        {
+          'label': 'Refresh'
+          'command': 'finance-cn:refresh'
+        }
+      ]
+    ]
+  }
+]
