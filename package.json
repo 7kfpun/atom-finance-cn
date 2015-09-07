@@ -2,9 +2,10 @@
   "name": "finance-cn",
   "main": "./lib/finance-cn",
   "version": "0.0.0",
-  "description": "Simple plugin for checking your stock in Atom.io editor (Chinese market).",
+  "description": "Simple plugin for checking your stock in Atom.io editor (Hong Kong and China market).",
   "keywords": [
-    "chinese market",
+    "china market",
+    "hong kong market",
     "finance",
     "financial",
     "statusbar",

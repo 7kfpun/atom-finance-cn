@@ -133,8 +133,9 @@ class FinanceCNView extends HTMLDivElement
         if exps
           for exp in exps
             exp = exp.replace /[{}]/g, ''
-            format = format.replace exp, coin[quote][exp]
-            console.log exp, coin[quote][exp]
+            if quote of coin
+              format = format.replace exp, coin[quote][exp]
+              console.log exp, coin[quote][exp]
         format = format.replace /[{}]/g, ''
         results.push(format)
 

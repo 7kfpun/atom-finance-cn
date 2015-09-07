@@ -29,8 +29,9 @@ module.exports =
       type: 'string'
       default: ' | '
     watchlist:
+      description: 'For Hong Kong stock exchange, ticker should start with "hk". For Shanghai stock exchange, ticker should start with "0". For Shenzhen stock exchange, ticker should start with "1".'
       type: 'string'
-      default: '0000001,1399001,1399300'
+      default: 'hkHSI,hkHSCEI,0000001,1399001,1399300'
 
   activate: ->
     console.log 'finance-cn', 'activate'

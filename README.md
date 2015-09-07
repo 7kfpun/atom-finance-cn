@@ -1,6 +1,6 @@
 # Finance-cn
 
-Simple plugin for checking your stock in Atom.io editor (Chinese market).
+Simple plugin for checking your stock in Atom.io editor (Hong Kong and China market).
 
 ![ScreenShot](https://raw.github.com/7kfpun/atom-finance-cn/master/screenshot.gif)
 
@@ -52,7 +52,7 @@ Finance-cn has 6 settings that can be edited:
 4. Scroll | default: `left` (left, right, fixed)
 4. Scroll Delay | default: `85`
 5. Separator | default: ` | `
-6. Watchlist | default: `0000001,1399001,1399300`
+6. Watchlist | default: `hkHSI,hkHSCEI,0000001,1399001,1399300`
 
 #### Commands
 
@@ -65,6 +65,17 @@ The following commands are available and are keyboard shortcuts.
 ## Financial data from Money 163 (網易財經)
 
 This plugin supports all exchanges and markets that Money 163 covers.
+
+- For Hong Kong stock exchange, ticker should start with "hk":
+  - hkHSI for Hang Seng Index
+  - hkHSCEI for Hang Seng China Enterprises Index
+  - hk00005 for HSBC
+- For Shanghai stock exchange, ticker should start with "0":
+  - 0000001 for SSE Composite Index
+  - 0601318 for Ping An
+- For Shenzhen stock exchange, ticker should start with "1":
+  - 1399001 for SZSE Component Index
+  - 1002594 for BYD Co Ltd
 
 #### QuoteProperty
 
