@@ -79,6 +79,7 @@ This plugin supports all exchanges and markets that Money 163 covers.
 
 #### QuoteProperty
 
+    // Shanghai and Shenzhen stock exchange
     code
     percent
     high
@@ -115,6 +116,34 @@ This plugin supports all exchanges and markets that Money 163 covers.
     arrow
     time
     yestclose
+    turnover
+
+    // Hong Kong stock exchange
+    suspend
+    share
+    ask_volume
+    datetime
+    high
+    open
+    bid_volume
+    percent
+    low
+    pe
+    52low
+    type
+    price
+    updown
+    symbol
+    market_capital
+    schidesp
+    volume
+    lotsze4
+    ask
+    52high
+    yestclose
+    bid
+    name
+    time
     turnover
 
 

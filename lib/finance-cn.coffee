@@ -14,7 +14,7 @@ module.exports =
       description: 'In seconds, if zero seconds only refreshes when open/close windows or trigger refresh'
       type: 'integer'
       default: 30
-      minimum: 10
+      minimum: 2
     scroll:
       type: 'string'
       default: 'left'
