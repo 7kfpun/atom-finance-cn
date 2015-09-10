@@ -1,6 +1,6 @@
 # Finance-cn
 
-Simple plugin for checking your stock in Atom.io editor (Hong Kong and China market).
+Simple plugin for checking your stock in Atom.io editor (Money 163 (網易財經) - China, Hong Kong and US markets).
 
 ![ScreenShot](https://raw.github.com/7kfpun/atom-finance-cn/master/screenshot.gif)
 
@@ -52,7 +52,7 @@ Finance-cn has 6 settings that can be edited:
 4. Scroll | default: `left` (left, right, fixed)
 4. Scroll Delay | default: `85`
 5. Separator | default: ` | `
-6. Watchlist | default: `hkHSI,hkHSCEI,0000001,1399001,1399300`
+6. Watchlist | default: `hkHSI,hkHSCEI,0000001,1399001,1399300,US_DOWJONES,US_NASDAQ,US_SP500`
 
 #### Commands
 
@@ -66,16 +66,15 @@ The following commands are available and are keyboard shortcuts.
 
 This plugin supports all exchanges and markets that Money 163 covers.
 
-- For Hong Kong stock exchange, ticker should start with "hk":
-  - hkHSI for Hang Seng Index
-  - hkHSCEI for Hang Seng China Enterprises Index
-  - hk00005 for HSBC
-- For Shanghai stock exchange, ticker should start with "0":
-  - 0000001 for SSE Composite Index
-  - 0601318 for Ping An
-- For Shenzhen stock exchange, ticker should start with "1":
-  - 1399001 for SZSE Component Index
-  - 1002594 for BYD Co Ltd
+- For Hong Kong stock exchange, ticker should start with "hk"
+  - e.g. hkHSI, hkHSCEI, hk00005
+- For Shanghai stock exchange, ticker should start with "0"
+  - e.g. 0000001, 0601318
+- For Shenzhen stock exchange, ticker should start with "1"
+  - e.g. 1399001, 1002594
+- For US markets, ticker should start with "US_"
+  - e.g. US_DOWJONES, US_NASDAQ, US_SP500
+- For others, please refer from Money 163
 
 #### QuoteProperty
 
@@ -145,6 +144,22 @@ This plugin supports all exchanges and markets that Money 163 covers.
     name
     time
     turnover
+
+    // US markets
+    yestclose
+    type
+    name
+    updown
+    symbol
+    percent
+    update
+    52high
+    high
+    low
+    time
+    52low
+    open
+    price
 
 
 ## Related project

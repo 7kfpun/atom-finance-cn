@@ -24,7 +24,7 @@ class FinanceCNView extends HTMLDivElement
           for exp in exps
             exp = exp.replace /[{}]/g, ''
             if exp not in properties
-              atom.notifications.addWarning exp + ' is a supported quote property provided by Money 163.',
+              atom.notifications.addWarning exp + 'is a supported quote property provided by Money 163.',
                 dismissable: false
                 detail: 'Please refer to the documantation on https://github.com/7kfpun/atom-finance-cn.'
       ), 2000
@@ -140,7 +140,7 @@ class FinanceCNView extends HTMLDivElement
         results.push(format)
 
       @price.innerHTML = results.join(separator)
-      # @finance.appendChild @price
+      @finance.appendChild @price
 
       if atom.config.get('finance-cn.display') == 'left'
         @tile = @statusBar.addLeftTile(priority: 110, item: this)
