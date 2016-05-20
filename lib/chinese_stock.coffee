@@ -12,8 +12,11 @@ chineseStock = (codes, cb) ->
     ).on 'end', ->
       bd = bd.replace '_ntes_quote_callback(', ''
       bd = bd.replace ');', ''
-      b = JSON.parse(bd)
-      cb b
+      try
+        b = JSON.parse(bd)
+        cb b
+      catch error
+        console.log 'Stock call', error
       return
     return
 

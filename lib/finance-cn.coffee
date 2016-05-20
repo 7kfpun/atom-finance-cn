@@ -27,7 +27,7 @@ module.exports =
       maximum: 1000
     separator:
       type: 'string'
-      default: '|'
+      default: ' | '
     watchlist:
       type: 'string'
       default: 'hkHSI,hkHSCEI,0000001,1399001,1399300,US_DOWJONES,US_NASDAQ,US_SP500'
